@@ -1,6 +1,17 @@
-# Siea's Chat Filter
+<div align='center'>
+
+<h1>Siea's Chat Filter</h1>
+<p></p>
+
+<p></p>
+
+<h4> <a href="https://github.com/sieadev/SieasChatFilter/"> Github </a> <span> · </span> <a href="https://github.com/sieadev/SieasChatFilter/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/sieadev/SieasChatFilter/issues"> Request Feature </a> </h4>
+<be>
+
+![chatfilterpreview](https://github.com/user-attachments/assets/c25ce690-eb7c-4df7-a1c2-4f2e94ed68d5)
 
 Siea's Chat Filter is a Plugin designed to filter chat messages based on various criteria such as spam, prohibited words, and links. The plugin is highly configurable and allows server administrators to customize the filtering behavior.
+</div>
 
 ## Features
 

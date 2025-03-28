@@ -1,0 +1,44 @@
+#####################################################################
+# +---------------------------------------------------------------+ #
+# |                       Siea's Chat Filter                      | #
+# |                    Made with <3 by sieadev                    | #
+# +---------------------------------------------------------------+ #
+#####################################################################
+
+# ------------------------------ Note ----------------------------- #
+#      Players with the permission 'scf.bypass' will be able to     #
+#                      bypass the all filters.                      #
+# ----------------------------------------------------------------- #
+
+# In this section you can configure all messages that are sent by the
+# plugin. You can use color codes (&c, &a, &l, etc.) and placeholders
+# (%player%, %message%).
+messages:
+  chat_message_blocked: '&cYour message was blocked by the chat filter.'
+
+# In this section you can enable or disable the different filters.
+filters:
+  word-filter: true
+  spam-filter: true
+  link-filter: false
+
+# This is the regex pattern that is used to detect links in chat messages.
+# Only change this if you know what you are doing.
+link-pattern: '[A-Za-z0-9-]{2,63}\.[A-Za-z0-9-]{2,63}'
+
+# In this section you can configure the spam filter. The spam filter
+# will check if a player is sending the same message multiple times#
+# in a row. If the player is spamming, the message will be blocked.
+spam-cooldown: 30
+max-similar-messages: 3
+
+# --------------------------- IMPORTANT --------------------------- #
+# In this section you can define a list of bad words that you want  #
+# to filter out from chat messages. I recommend you to keep this as #
+# short as possible, as it will be checked against every message    #
+# sent in the server. Furthermore, your words should be ordered     #
+# from most common to least common, as the filter will stop at the  #
+# first match.                                                      #
+bad-words:
+  - 'verybadword'
+  - 'anotherbadword'

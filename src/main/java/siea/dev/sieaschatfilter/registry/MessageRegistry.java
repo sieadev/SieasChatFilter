@@ -11,6 +11,7 @@ public class MessageRegistry {
     private static final Map<String, String> message = new HashMap<>();
 
     public static void init(ConfigurationSection config) {
+        message.clear();
         MessageRegistry.config = config;
     }
 

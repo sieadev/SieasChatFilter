@@ -10,13 +10,17 @@ public class WordFilter extends Filter {
     private final Set<String> words;
 
     public WordFilter(ConfigurationSection section) {
-        words = new HashSet<>(section.getStringList("bad-words"));
+        Set<String> temp = new HashSet<>(section.getStringList("bad-words"));
+        words = new HashSet<>();
+        for (String word : temp) {
+            words.add(word.toLowerCase());
+        }
     }
 
     @Override
     public boolean filter(String text, Player player) {
         for (String word : words) {
-            if (text.contains(word)) {
+            if (text.toLowerCase().contains(word)) {
                 return true;
             }
         }

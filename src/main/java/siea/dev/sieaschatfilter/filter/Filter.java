@@ -1,14 +1,11 @@
 package siea.dev.sieaschatfilter.filter;
 
 import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.EventPriority;
-import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import siea.dev.sieaschatfilter.registry.MessageRegistry;
 
-public abstract class Filter implements Listener {
-    @EventHandler (priority = EventPriority.LOWEST)
+public abstract class Filter {
+
     public final void onPlayerChat(AsyncPlayerChatEvent e) {
         Player player = e.getPlayer();
         if (e.isCancelled()) return;

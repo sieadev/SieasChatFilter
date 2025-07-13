@@ -1,6 +1,12 @@
 name: SieasChatFilter
-version: '1.0'
+version: '1.0.2'
 main: siea.dev.sieaschatfilter.SieasChatFilter
 api-version: '1.21'
 authors: [ sieadev ]
 website: siea.dev
+commands:
+  sieaschatfilter:
+    description: Main command for Siea's Chat Filter
+    usage: /<command> <subcommand>
+    aliases: [ scf ]
+    permission: scf.admin
